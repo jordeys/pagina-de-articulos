@@ -1,0 +1,18 @@
+<div class="register">
+  <form class="custom-form" method="post">
+    <form (ngSubmit)="save($event)">
+      <p>
+        Email: <br/>
+        <input type="email" formControlName="email" placeholder="email" required="required">
+      </p>
+        <p>
+          contraseña: <br/>
+          <input type="password" formControlName="password" placeholder="password" required="required">
+        </p>
+          <p>
+            <p>
+         confirmar Contraseña: <br/>
+         <input type="password" formControlName="confirmPassword" placeholder="Repeat the password"required="required">
+         </p>
+        
+        <button (click)="navegacion()" type="submit" [disabled]="form.invalid">register</button> 
