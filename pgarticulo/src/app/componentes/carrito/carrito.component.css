@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(http://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg);
+    background-size: cover; 
+    font-family: sans-serif;
+    height: 300vh;
+  }
+
+  .col-sm-4 h2 {
+    color: blue;
+  }
+   .col-sm-4 p{
+    color: blue;
+   }
+   .col-sm-4 hr{
+    color: brown;
+   }

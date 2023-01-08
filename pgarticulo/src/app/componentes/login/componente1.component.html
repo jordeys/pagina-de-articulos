@@ -1,18 +1,31 @@
-<div class="register">
-  <form class="custom-form" method="post">
-    <form (ngSubmit)="save($event)">
-      <p>
-        Email: <br/>
-        <input type="email" formControlName="email" placeholder="email" required="required">
-      </p>
-        <p>
-          contraseña: <br/>
-          <input type="password" formControlName="password" placeholder="password" required="required">
-        </p>
-          <p>
-            <p>
-         confirmar Contraseña: <br/>
-         <input type="password" formControlName="confirmPassword" placeholder="Repeat the password"required="required">
-         </p>
-        
-        <button (click)="navegacion()" type="submit" [disabled]="form.invalid">register</button> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://github.com/m-mourouh/Animated-Login-Form-Using-Only-HTML-CSS-Sign-In-Form-Design/blob/master/Login_form/rocket.png?raw=true" alt="rocket" class="rocket">
+        <div class="text">
+            <h1>LOGIN</h1>
+            <p>ARTICULOS</p>
+        </div>
+        <form  class="form">
+            <div class="animated-input">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="check">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="disc"></label>
+                    <label for="check" class="remember">Recordar</label>
+                </div>
+            </div>
+        </form>
+        <button class="btn" type="submit" (click)="navegacion()" type="submit" [disabled]="form.invalid">LOGIN</button>
+    </div>
+</body>
+</html>

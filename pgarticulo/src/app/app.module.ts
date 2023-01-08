@@ -3,21 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 
+//
+import { CargarScriptsService } from './cargar-scripts.service';
+//
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Componente1Component } from './componentes/login/componente1.component';
-import { Componente2Component } from './componentes/componente2/componente2.component';
-import { Componente3Component } from './componentes/componente3/componente3.component';
-import { Componente4Component } from './componentes/componente4/componente4.component';
+import { CarritoComponent } from './componentes/carrito/carrito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Componente1Component,
-    Componente2Component,
-    Componente3Component,
-    Componente4Component,
+    CarritoComponent,
     
   ],
   imports: [
@@ -25,7 +25,7 @@ import { Componente4Component } from './componentes/componente4/componente4.comp
     AppRoutingModule,
     
   ],
-  providers: [CookieService],
+  providers: [CookieService, CargarScriptsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

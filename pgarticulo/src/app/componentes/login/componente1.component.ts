@@ -20,7 +20,6 @@ export class Componente1Component implements OnInit{
   ngOnInit(){
     
     this.form = this['formBuilder'].group({
-      nombre: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email, Validators.minLength(5),
       Validators.pattern(this.emailPattern)]],
       password:  ['', [Validators.required, Validators.minLength(6)]],
@@ -47,7 +46,7 @@ export class Componente1Component implements OnInit{
   }
  }
  navegacion(){
-  this.router.navigate(['pag1'])
+  this.router.navigate(['carrito'])
   }
 }
 
