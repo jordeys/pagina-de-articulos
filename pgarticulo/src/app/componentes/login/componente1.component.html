@@ -12,15 +12,8 @@
         </div>
         <form  class="form">
             <div class="animated-input">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-            </div>
-            <div class="check">
-                <div>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="disc"></label>
-                    <label for="check" class="remember">Recordar</label>
-                </div>
+                <input type="text" placeholder="email" formControlName="email">
+                <input type="password" placeholder="Password" formControlName="password">
             </div>
         </form>
         <button class="btn" type="submit" (click)="navegacion()" type="submit" [disabled]="form.invalid">INICIAR CESION</button>
