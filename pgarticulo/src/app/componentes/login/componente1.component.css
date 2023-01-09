@@ -42,7 +42,7 @@ body {
   top: -120px;
   right: -9%;
   animation: animate 1s ease infinite alternate;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .container .text {
   margin: 30px 0 5px 0;
