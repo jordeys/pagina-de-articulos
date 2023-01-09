@@ -81,9 +81,6 @@ const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
 // Funciones
 
-/**
- * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
- */
 function renderizarProductos() {
     baseDeDatos.forEach((info) => {
         // Estructura
@@ -120,9 +117,6 @@ function renderizarProductos() {
     });
 }
 
-/**
- * Evento para añadir un producto al carrito de la compra
- */
 function anyadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
     carrito.push(evento.target.getAttribute('marcador'))
@@ -131,9 +125,6 @@ function anyadirProductoAlCarrito(evento) {
 
 }
 
-/**
- * Dibuja todos los productos guardados en el carrito
- */
 function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
@@ -170,9 +161,6 @@ function renderizarCarrito() {
     DOMtotal.textContent = calcularTotal();
 }
 
-/**
- * Evento para borrar un elemento del carrito
- */
 function borrarItemCarrito(evento) {
     // Obtenemos el producto ID que hay en el boton pulsado
     const id = evento.target.dataset.item;
@@ -184,9 +172,6 @@ function borrarItemCarrito(evento) {
     renderizarCarrito();
 }
 
-/**
- * Calcula el precio total teniendo en cuenta los productos repetidos
- */
 function calcularTotal() {
     // Recorremos el array del carrito 
     return carrito.reduce((total, item) => {
@@ -199,9 +184,6 @@ function calcularTotal() {
     }, 0).toFixed(2);
 }
 
-/**
- * Varia el carrito y vuelve a dibujarlo
- */
 function vaciarCarrito() {
     // Limpiamos los productos guardados
     carrito = [];
