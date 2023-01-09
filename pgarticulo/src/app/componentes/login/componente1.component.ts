@@ -24,7 +24,6 @@ export class Componente1Component implements OnInit{
       Validators.pattern(this.emailPattern)]],
       password:  ['', [Validators.required, Validators.minLength(6)]],
       confirmarPassword: ['', [Validators.required]],
-      // Number: ['',[Validators.required]],
     });
 
     this.form.valueChanges
